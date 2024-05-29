@@ -1,0 +1,31 @@
+CREATE TABLE `Videojuego_1`.`Personaje`(
+`id_NombredePersonaje` varchar (50) not null,
+`Edad` int Not Null,
+`Fecha_de_Nacimiento` date Not Null,
+`Estatura` varchar (50) Not Null,
+`Peso` varchar (50) Not Null,
+`Region` varchar (50) Not Null,
+PRIMARY KEY(`id_NombredePersonaje`)
+);
+
+CREATE TABLE `Videojuego_1`.`Caracteristicas_Personajes`(
+`id_Ataque` int NOT NULL,
+`Vida` int NOT NULL,
+`Multiplicador_de_Daño` int NOT NULL,
+`Defensa` int NOT NULL,
+`Daño_Critico` int NOT NULL,
+`Probabilidad_de_Critico` int NOT NULL,
+`id_Arma` varchar (50) not null,
+`id_NombredePersonaje` varchar (50) not null,
+PRIMARY KEY(`id_Ataque`)
+);
+
+CREATE TABLE `Videojuego_1`.`Habilidades_Personajes`(
+`id_Arma` int NOT NULL AUTO_INCREMENT,
+`Ataque_Normal` varchar (50) Not Null,
+`Ataque_Cargado` varchar (50) Not Null,
+`Habilidad_Elemental` varchar (50) Not Null,
+`Habilidad_Definitiva` varchar (50) Not Null,
+`Habilidad_Pasiva` varchar (50) Not Null,
+PRIMARY KEY(`id_Arma`)
+);
