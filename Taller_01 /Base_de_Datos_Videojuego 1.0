@@ -21,7 +21,7 @@ PRIMARY KEY(`id_Ataque`)
 );
 
 CREATE TABLE `Videojuego_1`.`Habilidades_Personajes`(
-`id_Arma` int NOT NULL AUTO_INCREMENT,
+`id_Arma` varchar (50) Not Null,
 `Ataque_Normal` varchar (50) Not Null,
 `Ataque_Cargado` varchar (50) Not Null,
 `Habilidad_Elemental` varchar (50) Not Null,
