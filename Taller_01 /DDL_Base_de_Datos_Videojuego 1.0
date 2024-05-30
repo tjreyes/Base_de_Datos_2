@@ -5,6 +5,7 @@ CREATE TABLE `Videojuego_1`.`Personajes`(
 `Estatura` varchar (50) Not Null,
 `Peso` varchar (50) Not Null,
 `Region` varchar (50) Not Null,
+`Elemento` varchar (50) Not Null,
 PRIMARY KEY(`id_NombredePersonaje`)
 );
 
