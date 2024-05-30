@@ -11,10 +11,10 @@ PRIMARY KEY(`id_NombredePersonaje`)
 CREATE TABLE `Videojuego_1`.`Estadisticas_Personajes`(
 `id_Ataque` int NOT NULL,
 `Vida` int NOT NULL,
-`Multiplicador_de_Daño` int NOT NULL,
+`Multiplicador_de_Daño` float NOT NULL,
 `Defensa` int NOT NULL,
-`Daño_Critico` int NOT NULL,
-`Probabilidad_de_Critico` int NOT NULL,
+`Daño_Critico` float NOT NULL,
+`Probabilidad_de_Critico` float NOT NULL,
 `id_Arma` varchar (50) not null,
 `id_NombredePersonaje` varchar (50) not null,
 PRIMARY KEY(`id_Ataque`)
