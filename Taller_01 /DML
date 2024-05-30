@@ -1,0 +1,5 @@
+INSERT INTO Personajes (id_NombredePersonaje, Edad, Fecha_de_Nacimiento, Estatura, Peso, Region)
+VALUES ('Dehya', 28, "15-10-1994", '175cm', '70kg', "Sumeru"),
+       ('Sekiro', 30, "20-5-1992", '170cm', '75kg', "Osaka"),
+       ('Thorfinn', 18, "5-2-2006", '165cm', '70kg', "Noruega"),
+       ('Pierro', 50, "9-12-1972", '180', '80kg', "Kahenria");
