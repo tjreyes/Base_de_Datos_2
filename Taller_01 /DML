@@ -1,5 +1,17 @@
-INSERT INTO Personajes (id_NombredePersonaje, Edad, Fecha_de_Nacimiento, Estatura, Peso, Region)
-VALUES ('Dehya', 28, "15-10-1994", '175cm', '70kg', "Sumeru"),
-       ('Sekiro', 30, "20-5-1992", '170cm', '75kg', "Osaka"),
-       ('Thorfinn', 18, "5-2-2006", '165cm', '70kg', "Noruega"),
-       ('Pierro', 50, "9-12-1972", '180', '80kg', "Kahenria");
+INSERT INTO Personajes (id_NombredePersonaje, Edad, Fecha_de_Nacimiento, Estatura, Peso, Region, Elemento)
+VALUES ('Dehya', 28, "15-10-1994", '175cm', '70kg', "Sumeru", "Fuego"),
+       ('Sekiro', 30, "20-5-1992", '170cm', '75kg', "Osaka", "Rayo"),
+       ('Thorfinn', 18, "5-2-2006", '165cm', '70kg', "Noruega", "Viento"),
+       ('Pierro', 50, "9-12-1972", '180', '80kg', "Kahenria", "Hielo");
+
+INSERT INTO Estadisticas_Personajes (id_Ataque, Vida, Multiplicador_de_Daño, Defensa, Daño_Critico, Probabilidad_de_Critico, id_Arma, id_NombredePersonaje)
+VALUES (2000, 30000, 2.5, 900, 200.00, 75.5, "Claymor", 'Dehya'),
+       (1900, 20000, 3.0, 1000, 180.00, 80.0, "Katana", 'Sekiro'),
+       (1500, 19000, 4.5, 600, 250.00, 85.5, "Dagas", 'Thorfinn'),
+       (2500, 35000, 3.5, 2000, 150.00, 70.0, "Catalisador", 'Pierro' );
+       
+INSERT INTO Habilidades_Personajes (id_Arma, id_NombredePersonaje, Ataque_Normal, Ataque_Cargado, Habilidad_Elemental, Habilidad_Definitiva, Habilidad_Pasiva)
+VALUES ("Claymor", 'Dehya', "Garras de Lona", "Embestida de Leon", "Caida Felina", "Rido de la Leona", "Calor de la Manada"),
+       ("Katana", 'Sekiro', "Corte del Dragon","Ichimonji", "Baile del Cerero", "Corte Mortal", 'Harakiri'),
+       ("Dagas", 'Thorfinn', "Danza Punzante", "Puñalada Doble", "Tornado de Cortes", "Berserker", "Verdadero Guerrero"),
+       ("Catalisador", 'Pierro', "Tempanos de Hielo", "Iceber", "Avalancha", "Nevada Eterna", 'Bajo Cero');
