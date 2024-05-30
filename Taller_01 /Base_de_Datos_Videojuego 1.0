@@ -1,4 +1,4 @@
-CREATE TABLE `Videojuego_1`.`Personaje`(
+CREATE TABLE `Videojuego_1`.`Personajes`(
 `id_NombredePersonaje` varchar (50) not null,
 `Edad` int Not Null,
 `Fecha_de_Nacimiento` date Not Null,
@@ -8,7 +8,7 @@ CREATE TABLE `Videojuego_1`.`Personaje`(
 PRIMARY KEY(`id_NombredePersonaje`)
 );
 
-CREATE TABLE `Videojuego_1`.`Caracteristicas_Personajes`(
+CREATE TABLE `Videojuego_1`.`Estadisticas_Personajes`(
 `id_Ataque` int NOT NULL,
 `Vida` int NOT NULL,
 `Multiplicador_de_Daño` int NOT NULL,
